@@ -41,7 +41,7 @@ const Home = () => {
                 priority.
               </p>
               <br />
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 Book Photographer
               </button>
             </div>
@@ -70,7 +70,7 @@ const Home = () => {
                 rustic.
               </p>
               <br />
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 Book Photographer
               </button>
             </div>
@@ -98,7 +98,7 @@ const Home = () => {
                 almost as long as photography itself has been around.
               </p>
               <br />
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
                 Book Photographer
               </button>
             </div>
