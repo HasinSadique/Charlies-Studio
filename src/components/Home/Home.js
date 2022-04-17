@@ -15,7 +15,7 @@ const Home = () => {
       />
       <br />
       <div className="">
-        <h1 className=" font-semibold text-4xl">Service Section</h1>
+        <h1 className="mt-20 mb-10 font-semibold text-4xl">Service Section</h1>
         <br />
         <div className="grid md:grid-cols-3">
           <div className=" border-2 mx-auto mb-10 w-3/4 max-w-sm rounded overflow-hidden shadow-lg">
@@ -31,6 +31,19 @@ const Home = () => {
               />
               <br />
               <h1 className="text-2xl text-center font-extrabold">$ 800</h1>
+              <br />
+              <p className="text-justify">
+                A wedding is one of the greatest events that every couple looks
+                into. Most couples desire to make it more meaningful and
+                unforgettable as it happens once in a lifetime. Finding the
+                venue, shopping for the wedding dress, preparing invitations,
+                and booking a photographer and videographer should be a top
+                priority.
+              </p>
+              <br />
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                Book Photographer
+              </button>
             </div>
           </div>
 
@@ -47,6 +60,19 @@ const Home = () => {
               />
               <br />
               <h1 className="text-2xl text-center font-extrabold">$ 1500</h1>
+              <br />
+              <p className="text-justify">
+                Nature isn't just pretty scenery. It's also seen in the
+                ferociousness animals have and in the love animals have for each
+                other. We offer a fine collection of wildlife photographs
+                featuring animal species in a variety of habitat locations that
+                will fit seamlessly into many themed settings from African to
+                rustic.
+              </p>
+              <br />
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                Book Photographer
+              </button>
             </div>
           </div>
 
@@ -62,7 +88,19 @@ const Home = () => {
                 alt=""
               />
               <br />
-              <h1 className="text-2xl text-center font-extrabold">$100</h1>
+              <h1 className="text-2xl text-center font-extrabold">$1000</h1>
+              <br />
+              <p className="text-justify">
+                Fashion photography focuses on the display of fashion clothing
+                and items. It is most common on advertising boards and in
+                fashion magazines. The photography will usually feature models
+                wearing the display items. Fashion photography has existed
+                almost as long as photography itself has been around.
+              </p>
+              <br />
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                Book Photographer
+              </button>
             </div>
           </div>
         </div>
