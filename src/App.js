@@ -8,7 +8,8 @@ import NotFound from "./components/NotFound/NotFound";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,8 @@ function App() {
           />
           <Route path="/blog" element={<Blog> </Blog>} />
           <Route path="/about" element={<About> </About>} />
+          <Route path="/login" element={<Login> </Login>} />
+          <Route path="/register" element={<Register> </Register>} />
           <Route path="*" element={<NotFound> </NotFound>} />
         </Routes>
       </body>

@@ -30,7 +30,7 @@ const Home = () => {
                 alt=""
               />
               <br />
-              <h1 className="text-2xl text-center font-extrabold">$ 800</h1>
+              <h1 className="text-2xl text-center font-extrabold">$ 1800</h1>
               <br />
               <p className="text-justify">
                 A wedding is one of the greatest events that every couple looks

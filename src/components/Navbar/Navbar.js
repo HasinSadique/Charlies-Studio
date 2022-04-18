@@ -1,26 +1,43 @@
 import React, { useState } from "react";
-import { MenuIcon, XIcon } from "@heroicons/react/solid";
+import useFirebase from "../../hooks/useFirebase";
 
 const Navbar = () => {
-  const routes = [
-    { id: 1, name: "HOME", link: "/" },
-    { id: 2, name: "Service Section", link: "/service-section" },
-    { id: 5, name: "About", link: "/about" },
-  ];
+  const { user } = useFirebase();
+  console.log(user.id);
 
   return (
-    <nav className=" bg-black text-white w-full ">
+    <nav className="flex justify-center items-center bg-black text-white w-full ">
       <ul className="flex justify-center px-16 py-3">
-        <li className="mr-10 lg:mr-16">
-          <a href="/"> Home </a>{" "}
-        </li>{" "}
-        <li className="mr-10 lg:mr-16">
-          <a href="/blog"> Blog </a>{" "}
-        </li>{" "}
-        <li className="mr-10 lg:mr-16">
-          <a href="/about"> About </a>{" "}
-        </li>{" "}
-      </ul>{" "}
+        <li className="hover:text-red-400 mr-10 lg:mr-16">
+          <a href="/"> Home </a>
+        </li>
+        <li className="hover:text-red-400 mr-10 lg:mr-16">
+          <a href="/blog"> Blog </a>
+        </li>
+        <li className="hover:text-red-400 mr-10 lg:mr-16">
+          <a href="/about"> About </a>
+        </li>
+      </ul>
+      {user.id ? (
+        <li className="list-none mr-10">
+          <a className="hover:text-red-400" href="/login">
+            Log out
+          </a>
+        </li>
+      ) : (
+        <ul className="flex ml-auto">
+          <li className="list-none ml-auto mr-10">
+            <a className="hover:text-red-400" href="/register">
+              Register
+            </a>
+          </li>
+          <li className="list-none mr-10">
+            <a className="hover:text-red-400" href="/login">
+              Login
+            </a>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 };
