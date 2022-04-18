@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import useFirebase from "../../hooks/useFirebase";
 
 const Navbar = () => {
-  const { user } = useFirebase();
-  console.log(user.id);
+  const { user, handelSignOut } = useFirebase();
+  // console.log(user.id);
 
   return (
     <nav className="flex justify-center items-center bg-black text-white w-full ">
@@ -18,12 +18,10 @@ const Navbar = () => {
           <a href="/about"> About </a>
         </li>
       </ul>
-      {user.id ? (
-        <li className="list-none mr-10">
-          <a className="hover:text-red-400" href="/login">
-            Log out
-          </a>
-        </li>
+      {user?.uid ? (
+        <button className="ml-auto mr-10" onClick={handelSignOut}>
+          Log out
+        </button>
       ) : (
         <ul className="flex ml-auto">
           <li className="list-none ml-auto mr-10">
