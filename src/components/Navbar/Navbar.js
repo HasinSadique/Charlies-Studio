@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import useFirebase from "../../hooks/useFirebase";
+import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { getAuth, signOut } from "firebase/auth";
+import app from "../../firebase.init";
 
+const auth = getAuth(app);
 const Navbar = () => {
-  const { user, handelSignOut } = useFirebase();
-  // console.log(user.id);
+  const [user] = useAuthState(auth);
 
   return (
     <nav className="flex justify-center items-center bg-black text-white w-full ">
@@ -15,11 +17,14 @@ const Navbar = () => {
           <a href="/blog"> Blog </a>
         </li>
         <li className="hover:text-red-400 mr-10 lg:mr-16">
+          <a href="/checkout"> Check Out </a>
+        </li>
+        <li className="hover:text-red-400 mr-10 lg:mr-16">
           <a href="/about"> About </a>
         </li>
       </ul>
       {user?.uid ? (
-        <button className="ml-auto mr-10" onClick={handelSignOut}>
+        <button className="ml-auto mr-10" onClick={() => signOut(auth)}>
           Log out
         </button>
       ) : (

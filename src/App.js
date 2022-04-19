@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
+import Checkout from "./components/Checkout/Checkout";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
@@ -10,6 +11,7 @@ import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
+import RequireAuth from "./components/RequireAuth/RequireAuth";
 
 function App() {
   useEffect(() => {
@@ -18,11 +20,11 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Navbar> </Navbar>{" "}
-      </header>{" "}
+        <Navbar> </Navbar>
+      </header>
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />{" "}
+          <Route path="/" element={<Home />} />
           <Route
             path="/service-section"
             element={<ServiceSection> </ServiceSection>}
@@ -31,12 +33,20 @@ function App() {
           <Route path="/about" element={<About> </About>} />
           <Route path="/login" element={<Login> </Login>} />
           <Route path="/register" element={<Register> </Register>} />
+          <Route
+            path="/checkout"
+            element={
+              <RequireAuth>
+                <Checkout> </Checkout>
+              </RequireAuth>
+            }
+          />
           <Route path="*" element={<NotFound> </NotFound>} />
-        </Routes>{" "}
-      </main>{" "}
+        </Routes>
+      </main>
       <footer>
-        <Footer> </Footer>{" "}
-      </footer>{" "}
+        <Footer> </Footer>
+      </footer>
     </div>
   );
 }
