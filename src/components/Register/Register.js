@@ -47,7 +47,7 @@ const Register = () => {
   };
 
   return (
-    <div className="my-16 mx-80">
+    <div className="my-16 mx-auto">
       <p>{error}</p>
       <form
         onSubmit={handleCreateUser}

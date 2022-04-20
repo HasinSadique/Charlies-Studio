@@ -12,7 +12,7 @@ import { Navigate, useLocation, useNavigate } from "react-router";
 const auth = getAuth(app);
 
 const Login = () => {
-  const [signInWithGoogle, user] = useSignInWithGoogle(auth);
+  const [signInWithGoogle, user1] = useSignInWithGoogle(auth);
   // console.log("hobe", user);
 
   const [email, setEmail] = useState("");
@@ -36,12 +36,12 @@ const Login = () => {
     signInWithEmailAndPassword(email, password);
   };
 
-  if (user) {
+  if (user1 || user) {
     navigate(from, { replace: true });
   }
 
   return (
-    <div className="my-10 mx-80">
+    <div className="my-10 mx-auto">
       {error?.message ? (
         <p className="text-red-700 mb-2">Email or password does not match</p>
       ) : (
@@ -71,10 +71,14 @@ const Login = () => {
         />
         <br />
         <input
-          className="bg-orange-500 mt-3 w-28 h-6 cursor-pointer"
+          className="bg-orange-500 mt-3 w-28 h-6 mb-6 cursor-pointer"
           type="submit"
           value="Login"
         />
+        <br />
+        <a className=" text-slate-400 text-right" href="">
+          Forgot password
+        </a>
         <br />
         <h6 className="my-5">
           Don't have an account?{" "}
