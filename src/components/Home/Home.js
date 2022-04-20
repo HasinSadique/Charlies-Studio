@@ -18,7 +18,7 @@ const Home = () => {
         <h1 className="mt-20 mb-10 font-semibold text-4xl">Service Section</h1>
         <br />
         <div className="grid md:grid-cols-3">
-          <div className=" border-2 mx-auto mb-10 w-3/4 max-w-sm rounded overflow-hidden shadow-lg">
+          <div className=" border-2 mx-auto mb-10 w-3/4 max-w-sm rounded-2xl overflow-hidden shadow-lg">
             <div className="px-6 py-4">
               <h1 className="text-2xl text-center font-bold">
                 Wedding Photography
@@ -41,13 +41,16 @@ const Home = () => {
                 priority.
               </p>
               <br />
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <a
+                href="/checkout"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+              >
                 Book Photographer
-              </button>
+              </a>
             </div>
           </div>
 
-          <div className="border-2 mx-auto mb-10 w-3/4 max-w-sm rounded overflow-hidden shadow-lg">
+          <div className=" border-2 mx-auto mb-10 w-3/4 max-w-sm rounded-2xl overflow-hidden shadow-lg">
             <div className="px-6 py-4">
               <h1 className="text-2xl text-center font-bold">
                 Wild Life Photography
@@ -70,13 +73,16 @@ const Home = () => {
                 rustic.
               </p>
               <br />
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <a
+                href="/checkout"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+              >
                 Book Photographer
-              </button>
+              </a>
             </div>
           </div>
 
-          <div className=" border-2 mx-auto mb-10 w-3/4 max-w-sm rounded overflow-hidden shadow-lg">
+          <div className=" border-2 mx-auto mb-10 w-3/4 max-w-sm rounded-2xl overflow-hidden shadow-lg">
             <div className="px-6 py-4">
               <h1 className="text-2xl text-center font-bold">
                 Fashion Photography
@@ -84,7 +90,7 @@ const Home = () => {
               <br />
               <img
                 className="h-60 w-80"
-                src="https://cdn-ajggd.nitrocdn.com/kMoOFpDlsOVtlYJLrnSRNCQXaUFHZPTY/assets/static/optimized/rev-6389224/wp-content/uploads/2020/09/naeim-jafari.jpg"
+                src="https://cdn-ajggd.nitrocdn.com/kMoOFpDlsOVtlYJLrnSRNCQXaUFHZPTY/assets/static/optimized/rev-536aa32/wp-content/uploads/2020/09/ussama-azam.jpg"
                 alt=""
               />
               <br />
@@ -98,11 +104,36 @@ const Home = () => {
                 almost as long as photography itself has been around.
               </p>
               <br />
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+              <a
+                href="/checkout"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+              >
                 Book Photographer
-              </button>
+              </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bg-slate-200 border-4 my-10 mx-20 rounded-3xl">
+        <h1 className="text-center font-bold text-2xl mt-5">
+          Photography quotes
+        </h1>
+        <div className="grid md:grid-cols-3 mt-5 mx-20 rounded-3xl items-center mb-10">
+          <img
+            className="h-3/4 mx-auto rounded-3xl"
+            src="https://i.pinimg.com/564x/7e/ba/93/7eba93a055457f73f503f7f8892070e0.jpg"
+            alt=""
+          />
+          <img
+            className="h-3/4 mx-auto rounded-3xl"
+            src="https://i.pinimg.com/564x/95/46/54/954654c8d0d53efc634b1930e2080ff1.jpg"
+            alt=""
+          />
+          <img
+            className="h-3/4 mx-auto rounded-3xl"
+            src="https://i.pinimg.com/736x/ab/7d/d0/ab7dd0a2b1ef8a121bc2fe16de774d0d.jpg"
+            alt=""
+          />
         </div>
       </div>
     </div>

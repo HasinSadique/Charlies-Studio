@@ -17,7 +17,7 @@ const Navbar = () => {
           <a href="/blog"> Blog </a>
         </li>
         <li className="hover:text-red-400 mr-10 lg:mr-16">
-          <a href="/checkout"> Check Out </a>
+          <a href="/checkout"> Checkout </a>
         </li>
         <li className="hover:text-red-400 mr-10 lg:mr-16">
           <a href="/about"> About </a>
