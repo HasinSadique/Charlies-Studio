@@ -13,7 +13,7 @@
 *  Email verification
 *  Protected Checkout page
 
-**Frameworks & Libraries used:******
+******Frameworks & Libraries used:******
 
 * React JS
 * React firebase hooks
