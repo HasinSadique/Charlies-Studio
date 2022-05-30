@@ -184,17 +184,19 @@ const Login = () => {
           />
           <input
             onBlur={handlePasswordlBlur}
-            className="block rounded-lg mx-auto mb-6 w-full px-2"
+            className="block rounded-lg mx-auto w-full px-2"
             type="Password"
             placeholder="Password"
             required
           />
+          <h1 className="text-white mb-6 text-right mt-2 hover:text-orange-400 text-sm cursor-pointer">
+            Forgot Password?
+          </h1>
           <input
             className="block mx-auto rounded-xl text-white bg-orange-500 px-8 py-1"
             type="submit"
             value="Sign In"
           />
-
           <p className="text-white text-center mt-5 mb-2">
             New Joining?{" "}
             <a className="hover:text-orange-500" href="/register">
