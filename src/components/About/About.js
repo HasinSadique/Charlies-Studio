@@ -1,11 +1,11 @@
 import React from "react";
-
+// import "../../../public/hasin_DP.jpg";
 const About = () => {
   return (
     <div className="my-6 lg:my-14">
       <img
         className="w-52 rounded-full mx-auto"
-        src="https://scontent.fdac13-1.fna.fbcdn.net/v/t1.6435-9/123073024_3203654116399913_8041669527268423252_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeE1cGbJeYiBWbaSsvBrwwGlETMfS7XYs-sRMx9Ltdiz6_cZNjx6_8Cu31Y0J-Jn4bJp8Zzx4WTW_13ddLD6orCu&_nc_ohc=UDmXSor43AoAX8e-7dH&_nc_ht=scontent.fdac13-1.fna&oh=00_AT-Abd-pRqg2nutRr_0Xdt-NqzWcO0H5brC1M39kqfPl6g&oe=628047ED"
+        src="hasin_DP.jpg"
         alt="My profile Pic"
       />
       <br />
