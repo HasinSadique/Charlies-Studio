@@ -5,7 +5,7 @@ const Home = () => {
     <div>
       <div className="absolute w-full top-1/4">
         <h1 className="text-4xl lg:text-8xl uppercase font-serif text-white">
-          Charlie's Studio
+          Charlie 's Studio
         </h1>
       </div>
       <img
@@ -34,22 +34,22 @@ const Home = () => {
               <br />
               <p className="text-justify">
                 A wedding is one of the greatest events that every couple looks
-                into. Most couples desire to make it more meaningful and
-                unforgettable as it happens once in a lifetime. Finding the
+                into.Most couples desire to make it more meaningful and
+                unforgettable as it happens once in a lifetime.Finding the
                 venue, shopping for the wedding dress, preparing invitations,
                 and booking a photographer and videographer should be a top
                 priority.
               </p>
               <br />
               <a
-                href="/checkout"
+                id="Wedding"
+                href={`/checkout/${1800}`}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
               >
                 Book Photographer
               </a>
             </div>
           </div>
-
           <div className=" border-2 mx-auto mb-10 w-3/4 max-w-sm rounded-2xl overflow-hidden shadow-lg">
             <div className="px-6 py-4">
               <h1 className="text-2xl text-center font-bold">
@@ -65,23 +65,23 @@ const Home = () => {
               <h1 className="text-2xl text-center font-extrabold">$ 1500</h1>
               <br />
               <p className="text-justify">
-                Nature isn't just pretty scenery. It's also seen in the
+                Nature isn 't just pretty scenery. It' s also seen in the
                 ferociousness animals have and in the love animals have for each
-                other. We offer a fine collection of wildlife photographs
+                other.We offer a fine collection of wildlife photographs
                 featuring animal species in a variety of habitat locations that
                 will fit seamlessly into many themed settings from African to
                 rustic.
               </p>
               <br />
               <a
-                href="/checkout"
+                id="Wildlife"
+                href={`/checkout/${1500}`}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
               >
                 Book Photographer
               </a>
             </div>
           </div>
-
           <div className=" border-2 mx-auto mb-10 w-3/4 max-w-sm rounded-2xl overflow-hidden shadow-lg">
             <div className="px-6 py-4">
               <h1 className="text-2xl text-center font-bold">
@@ -98,14 +98,15 @@ const Home = () => {
               <br />
               <p className="text-justify">
                 Fashion photography focuses on the display of fashion clothing
-                and items. It is most common on advertising boards and in
-                fashion magazines. The photography will usually feature models
-                wearing the display items. Fashion photography has existed
-                almost as long as photography itself has been around.
+                and items.It is most common on advertising boards and in fashion
+                magazines.The photography will usually feature models wearing
+                the display items.Fashion photography has existed almost as long
+                as photography itself has been around.
               </p>
               <br />
               <a
-                href="/checkout"
+                id="Fashion"
+                href={`/checkout/${1000}`}
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
               >
                 Book Photographer

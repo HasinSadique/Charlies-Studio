@@ -1,9 +1,8 @@
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { getAuth, signOut } from "firebase/auth";
-import app from "../../firebase.init";
+import auth from "../../firebase.init";
 
-const auth = getAuth(app);
 const Navbar = () => {
   const [user] = useAuthState(auth);
 
@@ -24,7 +23,10 @@ const Navbar = () => {
         </li>
       </ul>
       {user?.uid ? (
-        <button className="ml-auto mr-10" onClick={() => signOut(auth)}>
+        <button
+          className="flex ml-auto mr-10 hover:bg-orange-600 px-4 py-1"
+          onClick={() => signOut(auth)}
+        >
           Log out
         </button>
       ) : (
